@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
-
 #import and load
 import duckdb
 import pandas as pd
@@ -13,10 +10,4 @@ def load_data(db_path: str) -> pd.DataFrame:
     df = conn.execute("SELECT * FROM superheroes").fetchdf()
     conn.close()
     return df
-
-
-# In[ ]:
-
-
-
 
