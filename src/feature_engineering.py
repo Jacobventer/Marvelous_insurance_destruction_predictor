@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 #Extract feautures
 import xml.etree.ElementTree as ET
 from datetime import datetime
@@ -73,10 +70,3 @@ def add_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
     feature_df = pd.json_normalize(parsed)
 
     return pd.concat([df, feature_df], axis=1)
-
-
-# In[ ]:
-
-
-
-
