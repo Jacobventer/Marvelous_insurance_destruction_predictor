@@ -2,8 +2,8 @@
 Machine Learning system and production-ready FastAPI service for predictiong the annual public destruction events for Marvel Superheroes.
 
 ## Project overview
-Marvelous Insurance provides insurance for Marvel Superheroes
-The objectrive of this project was to build a predictive model that predicts:
+Marvelous Insurance provides insurance for Marvel Superheroes  
+The objectrive of this project was to build a predictive model that predicts: 
 **Annual Public Destruction Events**
 
 The model is trained using data extracted from XML credit bureau records.
