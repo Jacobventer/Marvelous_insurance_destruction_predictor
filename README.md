@@ -70,6 +70,8 @@ The final model only uses:
 
 Malformed XML rows were flagged and excluded from training. In this case only one was excluded
 
+### 3. Training of model
+
 ## ML Model
 
 Two models were evaluated
