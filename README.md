@@ -1,4 +1,4 @@
-<img width="331" height="256" alt="image" src="https://github.com/user-attachments/assets/57076a55-867e-4bd3-b92f-0e067971bd5a" /># Marvelous Insurance - Superhero Public Destruction Events Predictor
+# Marvelous Insurance - Superhero Public Destruction Events Predictor
 Machine Learning system and production-ready FastAPI service for predictiong the annual public destruction events for Marvel Superheroes.
 
 ## Project overview
