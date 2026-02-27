@@ -165,11 +165,11 @@ The model supports underwriting by:
 - CI/CD deployment pipeline
 
 ## License
-MIT License
+MIT License   
 This project was done as part of an interview process
 
 ## Author
-Jaco Venter
+Jaco Venter  
 BSc Data Science student at International University of Applied Science (Germany)
 
 https://www.linkedin.com/in/jaco-venter-45502a162/
