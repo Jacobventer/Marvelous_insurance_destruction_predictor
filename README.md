@@ -58,15 +58,12 @@ Column of intrest: "CreditInfo" (XML Format)
 
 ### 2. Feature Engineering 
 The following features are extracted from  the XML:
+- "Credit_score", "age", "num_superpowers", "num_properties", "num_credit_cards", "total_credit_limit"
+The final model only uses:
 - "Credit_score"
 - "age"
-- "num_superpowers"
 - "num_properties"
-- "num_credit_cards"
-- "total_credit_limit"
-
-The final model only uses:
-["Credit_score", "age", "num_properties"] as they had the biggest correlation to annaul_public_destruction_events 
+They had the biggest correlation to annaul_public_destruction_events 
 
 Malformed XML rows were flagged and excluded from training. In this case only one was excluded
 
