@@ -9,5 +9,5 @@ class PredictionRequest(BaseModel):
 
 
 class PredictionResponse(BaseModel):
-    predicted_destruction_events: float
+    predicted_destruction_events: int
 
