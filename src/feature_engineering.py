@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 #Extract feautures
 import xml.etree.ElementTree as ET
 from datetime import datetime
@@ -61,7 +58,7 @@ def extract_features_from_xml(xml_string: str) -> dict:
                     features["total_credit_limit"] += int(limit.text)
 
     except ET.ParseError:
-        print("Warning: Malformed XML detected.") #warning added for safety net
+        print("Warning: Malformed XML detected.") #Warning added 
         features["xml_parse_error"] = 1
 
     return features
@@ -75,7 +72,6 @@ def add_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
     return pd.concat([df, feature_df], axis=1)
 
 
-# In[ ]:
 
 
 
