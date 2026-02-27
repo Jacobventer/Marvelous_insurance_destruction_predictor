@@ -64,9 +64,8 @@ The final model only uses:
 - "Credit_score"
 - "age"
 - "num_properties"
-They had the biggest correlation to annaul_public_destruction_events 
 
-Malformed XML rows were flagged and excluded from training. In this case only one was excluded
+They had the biggest correlation to annaul_public_destruction_events 
 
 ### 3. Training of model
 
