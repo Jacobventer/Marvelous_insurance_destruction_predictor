@@ -27,12 +27,12 @@ marvelous-insurance-destruction-predictor/
 │ └── inference_testing.ipynb
 │
 ├── app/
-│ ├── init.py
+│ ├── __init__.py
 │ ├── main.py
 │ └── schemas.py
 │
 ├── src/
-│ ├── init.py
+│ ├── __init__.py
 │ ├── data_loader.py
 │ ├── feature_engineering.py
 │ └── inference.py
@@ -76,7 +76,7 @@ Two models were evaluated
 - Random Forest Regressor
 
 Evaluation method:
-- 10-fold cross validation (only 91 superheroes in data set)
+- 10-fold cross validation (only 69 superheroes used in training)
 - Metrics:
   - Mean Absolute Error (MAE)
   - Root Mean Squared Error (RMSE)
@@ -86,16 +86,19 @@ Evaluation method:
  Random Forest performed better that Linear Regression over the metrics. 
 
  ## Model Performance
-Evaluation on new clients (training):
+Cross validation performance on training dataset:  
 
 - **MAE:** ~ 3.65
 - **RMSE:** ~ 4.62  
 
  ## Production API
- A FastAPI application exposes the model for underwriting use
- This can be used by the call center agent.
+ A FastAPI application exposes the model for underwriting use.  
+ This can be used by the Marvelous employee.
 
-### Endpoint: POST/ predict
+### Endpoint: 
+```code 
+POST/ predict
+```
 ### Request Body (JSON): 
 ```json
 {
@@ -115,32 +118,44 @@ The model automatically:
 - Reurns a rounded up destruction prediction
 
 
-## Running the API
-### 1. Install dependencies
+## Running the API locally
+Requirements:
+- Python 3.9+ recomended
+- Git installed
+  
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/Marvelous_Insurance.git
+cd Marvelous_Insurance
+```
+
+### 2. Install dependencies
 ``` bash
 pip install -r requirements.txt
 ```
-### 2. Run FastAPI
+
+### 3. Run FastAPI server
 From project root:
 ```bash
-python -m uvicorn.app.main:app
+python -m uvicorn app.main:app
 ```
-### 3. Open in browser:
+
+### 4. Open Swagger UI in browser:
 ```code
 http://127.0.0.1:8000/docs
 ```
 
 ## Inference Testing
 The inference_testing.ipynb notebook demonstrates:
-- Sport testing on 3 superheroes
-- Evaluation on known clients
+- Sport testing on 2 superheroes
 - Prediction for new applicants
+- Evaluation on known clients
 - Error analysis
 
 ## Business Interpretation
 The model supports underwriting by:
 - Estimating expected annual destruction
-- Support premium pricing decisions
+- Support data driven underwriting and premium pricing decisions
 
 
 ## Future Improvements
