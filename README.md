@@ -147,7 +147,7 @@ The model supports underwriting by:
 
 
 ## Future Improvements
-- Identify high risk superheroes for manual review
+- Identify high risk superheroes for manual underwriting
 - Support file upload for XML documents in the API
 - Feature expansion (damage_cost, property valuation)
 - CI/CD deployment pipeline
