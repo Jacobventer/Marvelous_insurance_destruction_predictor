@@ -2,7 +2,7 @@
 Machine Learning system and production-ready FastAPI service for predictiong the annual public destruction events for Marvel Superheroes.
 
 ## Project overview
-Marvelous Insurance provides insurance for Marvel Superheroes  
+Marvelous Insurance provides insurance for Marvel Superheroes.  
 The objectrive of this project was to build a predictive model that predicts:   
 **Annual Public Destruction Events**
 
@@ -57,7 +57,7 @@ Table: "superheroes"
 Column of intrest: "CreditInfo" (XML Format)
 
 ### 2. Feature Engineering 
-The following features are extracted from  the XML:
+The following features are extracted from the XML:
 - "Credit_score", "age", "num_superpowers", "num_properties", "num_credit_cards", "total_credit_limit"
  
 The final model only uses:
@@ -65,7 +65,7 @@ The final model only uses:
 - "age"
 - "num_properties"
 
-They had the biggest correlation to annaul_public_destruction_events 
+They had the biggest correlation to annaul_public_destruction_events. 
 
 ### 3. Training of model
 
