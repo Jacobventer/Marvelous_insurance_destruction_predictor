@@ -128,7 +128,7 @@ From project root:
 ```bash
 python -m uvicorn.app.main:app
 ```
-Open in browser:
+### 3. Open in browser:
 ```code
 http://127.0.0.1:8000/docs
 ```
