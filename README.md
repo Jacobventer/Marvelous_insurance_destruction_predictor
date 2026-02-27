@@ -118,6 +118,49 @@ The model automatically:
 - Reurns a rounded up destruction prediction
 
 
+## Running the API
+### 1. Install dependencies
+``` bash
+pip install -r requirements.txt
+```
+### 2. Run FastAPI
+From project root:
+```bash
+python -m uvicorn.app.main:app
+```
+Open in browser:
+```code
+http://127.0.0.1:8000/docs
+```
+
+## Inference Testing
+The inference_testing.ipynb notebook demonstrates:
+- Sport testing on 3 superheroes
+- Evaluation on known clients
+- Prediction for new applicants
+- Error analysis
+
+## Business Interpretation
+The model supports underwriting by:
+- Estimating expected annual destruction
+- Support premium pricing decisions
+
+
+## Future Improvements
+- Identify high risk superheroes for manual review
+- Support file upload for XML documents in the API
+- Feature expansion (damage_cost, property valuation)
+- CI/CD deployment pipeline
+
+## License
+MIT License
+This project was done as part of an interview process
+
+## Author
+Jaco Venter
+BSc Data Science student at International University of Applied Science (Germany)
+
+https://www.linkedin.com/in/jaco-venter-45502a162/
 
 
 
