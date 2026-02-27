@@ -15,7 +15,7 @@ The final solution includes:
 - Train model
 - Compare models
 - Model evaluation
-- PRoduction-ready FastAPI (Swagger)
+- PRoduction-ready FastAPI 
 
 #Project Structure
 ```
