@@ -18,6 +18,7 @@ The final solution includes:
 - PRoduction-ready FastAPI (Swagger)
 
 #Project Structure
+```
 marvelous-insurance-destruction-predictor/
 │
 ├── notebooks/
@@ -46,6 +47,7 @@ marvelous-insurance-destruction-predictor/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ## Data Pipeline
 ### 1. Data Loading
